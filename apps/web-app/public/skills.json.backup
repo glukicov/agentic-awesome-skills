@@ -1420,7 +1420,7 @@
     "category": "agent-orchestration",
     "name": "agy-delegate",
     "description": "Delegate coding tasks to the Google Antigravity CLI (`agy`) only when the user explicitly requests it, while the orchestrator retains review and landing responsibility.",
-    "risk": "safe",
+    "risk": "critical",
     "source": "https://github.com/amElnagdy/delegate-skills",
     "date_added": "2026-08-26",
     "plugin": {
@@ -1813,7 +1813,7 @@
     "category": "agent-orchestration",
     "name": "aider-delegate",
     "description": "Delegate coding tasks to Aider (`aider`) only when the user explicitly requests it, while the orchestrator retains review and landing responsibility.",
-    "risk": "safe",
+    "risk": "critical",
     "source": "https://github.com/amElnagdy/delegate-skills",
     "date_added": "2026-08-26",
     "plugin": {
@@ -4162,7 +4162,7 @@
     "category": "media",
     "name": "atlas-cloud-media",
     "description": "Generate Atlas Cloud images and videos through its asynchronous media API with schema-first model selection and credential-safe polling.",
-    "risk": "safe",
+    "risk": "critical",
     "source": "self",
     "date_added": "2026-08-12",
     "plugin": {
@@ -7801,7 +7801,7 @@
     "category": "code-quality",
     "name": "babysit-pr",
     "description": "Babysit a pull request through its bot review rounds: verify, fix, reply, resolve. Use for any babysit or watch-the-PR ask.",
-    "risk": "safe",
+    "risk": "critical",
     "source": "https://github.com/amElnagdy/review-skills",
     "date_added": "2026-08-26",
     "plugin": {
@@ -10694,7 +10694,7 @@
     "category": "agent-orchestration",
     "name": "claude-delegate",
     "description": "Delegate coding tasks to a separate Claude Code CLI process or Claude session only when the user explicitly requests it, while the orchestrator retains review and landing responsibility.",
-    "risk": "safe",
+    "risk": "critical",
     "source": "https://github.com/amElnagdy/delegate-skills",
     "date_added": "2026-08-26",
     "plugin": {
@@ -10976,7 +10976,7 @@
     "category": "agent-orchestration",
     "name": "cline-delegate",
     "description": "Delegate coding tasks to the Cline CLI (`cline`) only when the user explicitly requests it, while the orchestrator retains review and landing responsibility.",
-    "risk": "safe",
+    "risk": "critical",
     "source": "https://github.com/amElnagdy/delegate-skills",
     "date_added": "2026-08-26",
     "plugin": {
@@ -11851,7 +11851,7 @@
     "category": "agent-orchestration",
     "name": "codex-delegate",
     "description": "Delegate coding tasks to the OpenAI Codex CLI only when the user explicitly requests it, while the orchestrator retains review and landing responsibility.",
-    "risk": "safe",
+    "risk": "critical",
     "source": "https://github.com/amElnagdy/delegate-skills",
     "date_added": "2026-08-26",
     "plugin": {
@@ -12130,7 +12130,7 @@
     "category": "agent-orchestration",
     "name": "commandcode-delegate",
     "description": "Delegate coding tasks to the Command Code CLI (`cmd`) only when the user explicitly requests it, while the orchestrator retains review and landing responsibility.",
-    "risk": "safe",
+    "risk": "critical",
     "source": "https://github.com/amElnagdy/delegate-skills",
     "date_added": "2026-08-26",
     "plugin": {
@@ -13253,7 +13253,7 @@
     "category": "agent-orchestration",
     "name": "copilot-delegate",
     "description": "Delegate coding tasks to the GitHub Copilot CLI (`copilot`) only when the user explicitly requests it, while the orchestrator retains review and landing responsibility.",
-    "risk": "safe",
+    "risk": "critical",
     "source": "https://github.com/amElnagdy/delegate-skills",
     "date_added": "2026-08-26",
     "plugin": {
@@ -14201,7 +14201,7 @@
     "category": "agent-orchestration",
     "name": "cursor-delegate",
     "description": "Delegate coding tasks to the Cursor Agent CLI (`cursor-agent`) only when the user explicitly requests it, while the orchestrator retains review and landing responsibility.",
-    "risk": "safe",
+    "risk": "critical",
     "source": "https://github.com/amElnagdy/delegate-skills",
     "date_added": "2026-08-26",
     "plugin": {
@@ -23230,7 +23230,7 @@
     "category": "agent-orchestration",
     "name": "grok-delegate",
     "description": "Delegate coding tasks to the Grok Build CLI only when the user explicitly requests it, while the orchestrator retains review and landing responsibility.",
-    "risk": "safe",
+    "risk": "critical",
     "source": "https://github.com/amElnagdy/delegate-skills",
     "date_added": "2026-08-26",
     "plugin": {
@@ -26599,7 +26599,7 @@
     "category": "agent-orchestration",
     "name": "kimi-delegate",
     "description": "Delegate coding tasks to the Kimi Code CLI (`kimi`) only when the user explicitly requests it, while the orchestrator retains review and landing responsibility.",
-    "risk": "safe",
+    "risk": "critical",
     "source": "https://github.com/amElnagdy/delegate-skills",
     "date_added": "2026-08-26",
     "plugin": {
@@ -33814,7 +33814,7 @@
     "category": "agent-orchestration",
     "name": "omp-delegate",
     "description": "Delegate coding tasks to Oh My Pi (`omp`) only when the user explicitly requests it, while the orchestrator retains review and landing responsibility.",
-    "risk": "safe",
+    "risk": "critical",
     "source": "https://github.com/amElnagdy/delegate-skills",
     "date_added": "2026-08-26",
     "plugin": {
@@ -34129,7 +34129,7 @@
     "category": "agent-orchestration",
     "name": "opencode-delegate",
     "description": "Delegate coding tasks to the OpenCode CLI only when the user explicitly requests it, while the orchestrator retains review and landing responsibility.",
-    "risk": "safe",
+    "risk": "critical",
     "source": "https://github.com/amElnagdy/delegate-skills",
     "date_added": "2026-08-26",
     "plugin": {
@@ -35258,7 +35258,7 @@
     "category": "agent-orchestration",
     "name": "pi-delegate",
     "description": "Delegate coding tasks to the Pi coding agent CLI (`pi`) only when the user explicitly requests it, while the orchestrator retains review and landing responsibility.",
-    "risk": "safe",
+    "risk": "critical",
     "source": "https://github.com/amElnagdy/delegate-skills",
     "date_added": "2026-08-26",
     "plugin": {
@@ -37690,7 +37690,7 @@
     "category": "agent-orchestration",
     "name": "qoder-delegate",
     "description": "Delegate coding tasks to the Qoder CLI (`qodercli`) only when the user explicitly requests it, while the orchestrator retains review and landing responsibility.",
-    "risk": "safe",
+    "risk": "critical",
     "source": "https://github.com/amElnagdy/delegate-skills",
     "date_added": "2026-08-26",
     "plugin": {
@@ -48924,7 +48924,7 @@
     "category": "agent-orchestration",
     "name": "vibe-delegate",
     "description": "Delegate coding tasks to the Mistral Vibe CLI (`vibe`) only when the user explicitly requests it, while the orchestrator retains review and landing responsibility.",
-    "risk": "safe",
+    "risk": "critical",
     "source": "https://github.com/amElnagdy/delegate-skills",
     "date_added": "2026-08-26",
     "plugin": {
@@ -49487,7 +49487,7 @@
     "category": "agent-orchestration",
     "name": "warp-delegate",
     "description": "Delegate coding tasks to the Warp Agent CLI (`oz`) only when the user explicitly requests it, while the orchestrator retains review and landing responsibility.",
-    "risk": "safe",
+    "risk": "critical",
     "source": "https://github.com/amElnagdy/delegate-skills",
     "date_added": "2026-08-26",
     "plugin": {
@@ -51496,7 +51496,7 @@
     "category": "agent-orchestration",
     "name": "zcode-delegate",
     "description": "Delegate coding tasks to the Z.AI ZCode CLI only when the user explicitly requests it, while the orchestrator retains review and landing responsibility.",
-    "risk": "safe",
+    "risk": "critical",
     "source": "https://github.com/amElnagdy/delegate-skills",
     "date_added": "2026-08-26",
     "plugin": {
