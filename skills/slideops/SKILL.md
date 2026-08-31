@@ -2,7 +2,7 @@
 name: slideops
 description: "Turn a repository into a cited HTML slide deck and detect the day it drifts from the code. Citations record file, lines, and hash; a stdlib check reports CURRENT, MOVED, or CHANGED."
 category: content
-risk: safe
+risk: critical
 source: community
 source_repo: glukicov/slideops
 source_type: community
@@ -166,6 +166,10 @@ to be vendored into the deck's own repo.
 
 ## Security & Safety Notes
 
+- Ask before cloning the upstream repository, running `install.sh`, creating skill
+  symlinks in the user's home directory, downloading an optional `npx` package, or
+  writing deck output. Show the exact pinned commit and destination paths first, and
+  preserve any existing skill entries instead of overwriting them silently.
 - The citation scripts are standard-library-only Python: no dependencies, no network,
   no tokens.
 - The skill declares no `allowed-tools`, deliberately: the host agent's own permission
