@@ -62,31 +62,44 @@ In Claude Code, as a plugin (both skills, background updates):
 Or for Codex CLI, Copilot CLI, and OpenCode, one installer covers all of them:
 
 ```bash
-git clone --branch v1.0.0 https://github.com/glukicov/slideops && cd slideops && ./install.sh
+git clone https://github.com/glukicov/slideops && cd slideops
+git checkout ba43e89bc7936649be36a1796a62203f704f8c60   # the v1.0.0 release commit
+./install.sh
 ```
 
-The clone is pinned to the reviewed release this catalog copy froze at; drop the
-`--branch` flag if you prefer to track `main`.
+The checkout pins the exact commit this catalog copy froze at, which is what a reader
+can verify independently. (The canonical repo also blocks retargeting of `v*` tags with
+an active tag ruleset, but a SHA does not ask you to trust that.) `install.sh` symlinks
+the two skills into `~/.claude/skills` (read by Claude Code and OpenCode) and
+`~/.agents/skills` (read by Codex CLI and Copilot CLI).
 
 ### Step 2: Build a deck
 
 The skill walks a fixed pipeline: a two-minute repo scan, one compact intake (topic,
 audience, length, theme, scope, extras), an outline checkpoint before any HTML is
 written, then slide-by-slide construction from a verified template. Every snippet is
-cited as it is written:
+cited as it is written. Run the citation script from inside the repository being
+presented, via its installed path (an agent resolves `scripts/` against the skill's own
+directory automatically; the paths below are for running it yourself after
+`install.sh`):
 
 ```bash
-python3 scripts/cite.py app/main.py:40-58 --repo . --snippet   # prints data-src + data-sha256
-python3 scripts/cite.py --stamp deck.html --repo .             # stamps the build commit
+python3 ~/.agents/skills/slideops/scripts/cite.py app/main.py:40-58 --repo . --snippet   # prints data-src + data-sha256
+python3 ~/.agents/skills/slideops/scripts/cite.py --stamp deck.html --repo .             # stamps the build commit
 ```
+
+`--repo` always points at the repository the deck is about, never at the SlideOps
+checkout.
 
 Every slide is then rendered with headless Chrome and visually verified before the deck
 is considered done.
 
 ### Step 3: Check it later, for free
 
+From inside the repository being presented, same path convention as Step 2:
+
 ```bash
-python3 scripts/check.py docs/slides/ --repo .
+python3 ~/.agents/skills/slideops/scripts/check.py docs/slides/ --repo .
 ```
 
 Real output, from the demo deck that ships with the skill:
